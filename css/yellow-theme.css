@@ -1,0 +1,13 @@
+.navbar-dark .navbar-nav .btn-primary, .cover .overlay .find button.btn,
+.pattern .span, .works .span, .works .btn, .available .span, .footer form .btn,
+.up:hover{
+    background-color: #ff0;
+}
+.navbar-dark .navbar-nav .btn-primary, .cover .overlay .find button.btn,
+.works .btn, .footer form .btn, .up:hover{
+    border-color: #ff0;
+}
+.our-categories .item i, .footer ul li a:hover, .footer .contact p i,
+.footer .touch i:hover{
+    color: #ff0;
+}

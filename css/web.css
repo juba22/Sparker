@@ -1,0 +1,386 @@
+/* Start Style */
+
+/* Start Navbar */
+.navbar-dark .navbar-brand{font-size: 30px}
+.navbar-dark .navbar-nav .nav-link{ font-weight: bold;}
+.navbar-dark .navbar-nav .btn-primary{
+    margin-left: 15px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.navbar-dark .navbar-nav .btn-primary:hover{
+    background-color: #FFC107;
+    color: #222 ;
+    border-color: #FFC107;
+}
+/* End Navbar */
+
+/* Start Option */
+.option{
+    width: 200px;
+    background-color: #fff;
+    position: fixed;
+    top: 40%;
+    left: -201px;
+    z-index: 999;
+    border-radius: 0 0 5px;
+}
+.option h5{background-color: #f0f0f0; padding: 5px}
+.option ul{padding: 5px}
+.option ul li{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display: inline-block;
+    cursor: pointer
+}
+.option ul li:nth-child(1){background-color: #004dda}
+.option ul li:nth-child(2){background-color: #ff0}
+.option ul li:nth-child(3){background-color: #E60C00}
+.option ul li:nth-child(4){background-color: #01E619}
+.option ul li:nth-child(5){background-color: #DE00E6}
+.option .fas{
+    position: absolute;
+    top: 0;
+    right: -40px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+/* End Option */
+
+/* Start Cover */
+.cover{
+    background: url(../image/cover.jpg);
+    background-size: cover;
+    position: relative
+}
+.cover .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5)
+}
+.cover .overlay .find{
+    text-align: center;
+    position: relative;
+    top: 40%
+}
+.cover .overlay .find .col{
+    padding: 0
+}
+.cover .overlay .find h1,
+.cover .overlay .find p{color: #fff; font-weight: 1000; letter-spacing: 1.7px}
+.cover .overlay .find .looking{border-right: 1px solid #ccc; border-radius: 5px 0 0 5px}
+.cover .overlay .find .looking input{border-radius: 5px 0 0 5px;}
+.cover .overlay .find .map{border-right: 1px solid #ccc}
+.cover .overlay .find .form-group{background: #fff}
+.cover .overlay .find .fas{text-align: right}
+.cover .overlay .find input,
+.cover .overlay .find button{
+    width: 92%;
+    padding: 20px 15px;
+    border-radius: 0;
+    background-clip:inherit;
+    line-height: 3px
+}
+.cover .overlay .find input,
+.cover .overlay .find button:focus{
+    border-color: transparent;
+    box-shadow: none;
+}
+.cover .overlay .find button.categories{text-align: left; border-color: transparent}
+.cover .overlay .find button.btn{
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    width: 100%
+}
+.cover .overlay .find button.btn:hover{
+    background-color: #FFC107;
+    color: #222 ;
+    border-color: #FFC107;
+}
+.cover .overlay .find ul{
+    background: #fff;
+    margin-top: 3px;
+    height: 170px;
+    overflow-y: scroll;
+    display: none
+}
+.cover .overlay .find ul li{
+    padding: 10px 5px;
+    text-align: left;
+    cursor: pointer;
+    margin: 2px 0
+}
+.cover .overlay .find ul li:hover{background: #ccc}
+.cover .overlay .find ul li.active{
+    background: #ccc;
+    font-weight: bold
+}
+
+/* End Cover */
+
+/* Start Our Categories */
+
+.our-categories .col-lg{padding: 0}
+.our-categories{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    bottom: 30px;
+    margin: auto;
+    width: 85%;
+    box-shadow: 0px 5px 15px #ccc
+}
+.our-categories .item{
+    background: #fff;
+    padding: 20px;
+    cursor: pointer;
+    border-right: 1px solid #ccc;
+}
+.our-categories .item:hover i{transform: rotateY(180deg); color: #000}
+.our-categories .item i{
+    margin-bottom: 5px;
+}
+
+.our-categories .item p{margin: 0; font-weight: bold}
+
+/* End Our Categories */
+
+/* Start pattern */
+.pattern .main-title-1{
+    margin-top: 80px;
+    position: relative;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+}
+.pattern .span{
+    position: absolute;
+    top: 0;
+    left: -2px;
+    height: 33px;
+    width: 2px;
+    display: block;
+}
+.pattern a{text-decoration: none}
+.pattern h2{display: inline-block;margin: 0}
+.pattern p{color: #555; font-size: 20px}
+.pattern .arrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block
+}
+.pattern .arrow:hover{color: #000}
+.pattern .arrow .fas{margin-left: 10px}
+.pattern .img-box{
+    max-height: 170px;
+    max-width: 255px;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center
+}
+.pattern .img-box:hover img{
+    transform: scale(1.1);
+}
+.pattern .thumbnial{
+    position: relative
+}
+.pattern .thumbnial .overlay{
+    position: absolute;
+    bottom: 32%;
+    padding: 3px 0;
+    left: 0%;
+    text-align: left;
+    width: 100%;
+    line-height: 1;
+    height: 45px;
+    background-image: linear-gradient(0deg, black, #3e3e3e00);
+}
+.pattern .thumbnial .overlay b{
+    color: #fff;
+    font-weight: bold;
+    margin-left: 15px;
+}
+.pattern .bottom-30{
+    margin-bottom: 30px
+}
+.pattern .img-box .star{
+    font-size: 11px;
+    color: #ff0;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+/* End pattern */
+
+/* Start Works */
+.works{
+    /*background: #001741;*/
+    background-image:url(../image/Branding-red.gif);
+    width: 100%;
+    color: #fff;
+    position: relative
+}
+.works .over{
+    padding: 60px 0;
+    margin-top: 50px;
+    background: #00001beb;
+}
+.works .lead{
+    margin-bottom: 60px;
+    font-size: 29px;
+    line-height: 0.7;
+}
+.works .bord{
+    border-top: 2px solid #fff;
+    padding: 10px 0;
+    width: 140px;
+    margin: auto;
+}
+.works .span{
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    top: 60px;
+    left: 645px;
+}
+.works i{
+    color: #ffc107;
+    padding: 5px 0
+}
+.works .btn{
+    margin-top: 45px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 25px
+}
+.works .btn:hover{
+    background-color: #FFC107;
+    color: #222 ;
+    border-color: #FFC107;
+}
+/* End Works */
+
+/* Start available */
+.available{
+    padding: 70px 0;
+    position: relative
+}
+.available .lead{
+    margin-bottom: 60px;
+    font-size: 29px;
+    line-height: 0.7;
+}
+.available .bord{
+    border-top: 2px solid #e8e8e8;
+    padding: 10px 0;
+    width: 140px;
+    margin: auto;
+}
+.available .span{
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    top: 70px;
+    left: 526px;
+}
+.available .download{margin-top: 50px; margin-bottom: 5px}
+.available .download img{cursor: pointer; margin: 0 5px}
+.available .download img:hover{
+    transform: translate(0px, -5px);
+}
+.available .disk-bottom{color: #888; font-size: 12px}
+/* End available */
+
+/* Start Footer */
+.footer{
+    background: #fff;
+    border-top: 1px solid #f5f5f5;
+    padding: 50px 0;
+}
+.footer h4{margin-bottom: 15px}
+.footer ul li a{text-decoration: none; color: #999}
+.footer ul li{padding: 5px;}
+.footer ul li i{font-size: 13px;display: none;}
+.footer ul li a:hover{padding-left: 10px;}
+.footer ul li a:hover i{display: inline-block}
+.footer .contact p{
+    position: relative;
+    padding-left: 35px;
+    color: #999
+}
+.footer .contact p i{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.footer form input{
+    border-radius: 0;
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+}
+.footer form input:focus{
+    background-color: #f0f0f0;
+    border-color: #f0f0f0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+}
+.footer form .btn{
+    font-weight: bold;
+    border-radius: 0
+}
+.footer form .btn:hover{
+    background-color: #FFC107;
+    color: #222 ;
+    border-color: #FFC107;
+}
+.footer .touch h5{margin-top: 30px; margin-bottom: 10px}
+.footer .touch i{
+    color: #999;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+.footer-under{
+    padding: 20px;
+    width: 85%;
+    border-top: 1px solid #ccc;
+    margin: auto
+}
+.footer-under ul li{display: inline-block; margin: 0 5px}
+.footer-under ul li a, .footer-under ul li{color: #999; text-decoration: none}
+.footer-under ul li a:hover{color: #000}
+/* End Footer */
+
+/* Start up Button */
+.up{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #999999;
+    border-color: #999999;
+    border-radius: 50%;
+    display: none
+}
+/* End up Button */
+
+/* Start Framework */
+
+.navbar , .pattern .img-box img,
+.our-categories .item i, .cover .overlay .find button.btn,
+.navbar-dark .navbar-nav .btn-primary, .pattern .arrow, .works .btn,
+.available .download img, .footer ul li a, .footer form .btn, .footer .touch i,
+.footer-under ul li a{
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+/* End Style */
