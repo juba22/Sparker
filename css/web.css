@@ -13,6 +13,28 @@
     color: #222 ;
     border-color: #FFC107;
 }
+
+@media (max-width: 991px){
+    .navbar .navbar-nav{
+        background-color: #999;
+        text-align: center;
+        border-radius: 5px
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        margin-bottom: 10px;
+        font-size: 25px;
+        color: #000
+    }
+    .navbar-dark .navbar-toggler{
+        color: rgb(0 0 0);
+        border-color: rgb(0 0 0);
+        padding: 10px 15px;
+        border: 2px solid;
+    }
+    .navbar-dark .navbar-toggler:focus{
+        border-color: #000
+    }
+}
 /* End Navbar */
 
 /* Start Option */
@@ -69,9 +91,6 @@
     position: relative;
     top: 40%
 }
-.cover .overlay .find .col{
-    padding: 0
-}
 .cover .overlay .find h1,
 .cover .overlay .find p{color: #fff; font-weight: 1000; letter-spacing: 1.7px}
 .cover .overlay .find .looking{border-right: 1px solid #ccc; border-radius: 5px 0 0 5px}
@@ -98,6 +117,7 @@
     font-weight: bold;
     width: 100%
 }
+
 .cover .overlay .find button.btn:hover{
     background-color: #FFC107;
     color: #222 ;
@@ -121,7 +141,56 @@
     background: #ccc;
     font-weight: bold
 }
+.cover .overlay .find .col-lg{
+        padding: 0
+    }
 
+@media (max-width: 700px){
+    .cover .overlay .find h1{
+        font-size: 30px;
+        margin-bottom: 25px
+    }
+    .cover .overlay .find{
+        top: 25%;
+        padding: 50px
+    }
+    .cover .overlay .find input,.cover .overlay button{
+        display: inline-block;
+    }
+    .cover .overlay .find .form-group,
+    .cover .overlay .find button.btn
+    {
+        border-radius: 5px
+    }
+}
+@media (max-width: 991px){
+    .cover .overlay .find h1{
+        font-size: 30px;
+        margin-bottom: 25px
+    }
+    .cover .overlay .find{
+        top: 18%
+    }
+    .cover .overlay .find input,.cover .overlay button{
+        display: inline-block;
+    }
+    .cover .overlay .find .form-group,
+    .cover .overlay .find button.btn
+    {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .cover .overlay .find .looking input{
+        width: 90%
+    }
+        
+}
+@media (min-width: 992px) {
+    .cover .overlay .find .col{
+        padding: 0
+    }
+}
 /* End Cover */
 
 /* Start Our Categories */
@@ -193,7 +262,6 @@
 }
 .pattern .thumbnial .overlay{
     position: absolute;
-    bottom: 32%;
     padding: 3px 0;
     left: 0%;
     text-align: left;
@@ -215,6 +283,42 @@
     color: #ff0;
     margin-left: 15px;
     margin-bottom: 5px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .pattern .image{
+        margin-bottom: 20px
+    }
+    .pattern .thumbnial .overlay{
+        bottom: 25%;
+    }
+    .pattern .arrow{
+        bottom: 30px;
+        right: 8px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .pattern .thumbnial .overlay{
+        bottom: 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .pattern .thumbnial .overlay{
+        bottom: 17%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .pattern .thumbnial .overlay{
+        bottom: 32%;
+    }
 }
 /* End pattern */
 
