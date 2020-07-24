@@ -69,8 +69,6 @@ $(function () {
         }, 1000);
     });
     
-    /* Nice Scroll */
-    $("body").niceScroll();
     
     /* loading */
     $(window).each(function () {
