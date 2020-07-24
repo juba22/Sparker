@@ -93,8 +93,7 @@
 }
 .cover .overlay .find h1,
 .cover .overlay .find p{color: #fff; font-weight: 1000; letter-spacing: 1.7px}
-.cover .overlay .find .looking{border-right: 1px solid #ccc; border-radius: 5px 0 0 5px}
-.cover .overlay .find .looking input{border-radius: 5px 0 0 5px;}
+.cover .overlay .find .looking{border-right: 1px solid #ccc;}
 .cover .overlay .find .map{border-right: 1px solid #ccc}
 .cover .overlay .find .form-group{background: #fff}
 .cover .overlay .find .fas{text-align: right}
@@ -113,7 +112,6 @@
 }
 .cover .overlay .find button.categories{text-align: left; border-color: transparent}
 .cover .overlay .find button.btn{
-    border-radius: 0 5px 5px 0;
     font-weight: bold;
     width: 100%
 }
@@ -143,9 +141,34 @@
 }
 .cover .overlay .find .col-lg{
         padding: 0
-    }
+}
 
-@media (max-width: 700px){
+@media (max-width: 575px){
+    .cover .overlay .find h1{
+        font-size: 30px;
+        margin-bottom: 25px
+    }
+    .cover .overlay .find{
+        top: 15%;
+        padding: 50px
+    }
+    .cover .overlay .find input,.cover .overlay button{
+        display: inline-block;
+    }
+    .cover .overlay .find .form-group,
+    .cover .overlay .find button.btn
+    {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        overflow: hidden
+    }
+    .cover .overlay .find .form-group input,
+    .cover .overlay .find .form-group button{
+        width: 90%
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width : 767px) {
     .cover .overlay .find h1{
         font-size: 30px;
         margin-bottom: 25px
@@ -160,36 +183,48 @@
     .cover .overlay .find .form-group,
     .cover .overlay .find button.btn
     {
-        border-radius: 5px
+        border-radius: 5px;
+        margin-bottom: 10px;
+        overflow: hidden
+    }
+    .cover .overlay .find .form-group input,
+    .cover .overlay .find .form-group button{
+        width: 95%
     }
 }
-@media (max-width: 991px){
-    .cover .overlay .find h1{
-        font-size: 30px;
-        margin-bottom: 25px
-    }
-    .cover .overlay .find{
-        top: 18%
-    }
-    .cover .overlay .find input,.cover .overlay button{
-        display: inline-block;
-    }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
     .cover .overlay .find .form-group,
     .cover .overlay .find button.btn
     {
         border-radius: 5px;
         margin-bottom: 10px;
-        overflow: hidden;
+        overflow: hidden
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .cover .overlay .find .form-group,
+    .cover .overlay .find button.btn
+    {
+        border-radius: 0;
     }
     .cover .overlay .find .looking input{
-        width: 90%
+        border-radius: 5px 0 0 5px;
     }
-        
+    .cover .overlay .find .looking{
+        border-radius: 5px 0 0 5px
+    }
+    .cover .overlay .find button.btn{
+    border-radius: 0 5px 5px 0;
 }
-@media (min-width: 992px) {
-    .cover .overlay .find .col{
-        padding: 0
-    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
 }
 /* End Cover */
 
@@ -285,6 +320,27 @@
     margin-bottom: 5px;
 }
 
+/* extra Small devices */
+@media (max-width: 575px){
+    .pattern{
+        padding: 0 40px
+    }
+    .pattern p{
+        font-size: 18px
+    }
+    .pattern .arrow{
+        bottom: 60%
+    }
+    .pattern .thumbnial .overlay{
+        bottom: 33%
+    }
+    .pattern .image{
+        margin-bottom: 20px
+    }
+    .pattern .img-box{
+        margin: auto
+    }
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -346,14 +402,6 @@
     width: 140px;
     margin: auto;
 }
-.works .span{
-    display: inline-block;
-    width: 60px;
-    height: 2px;
-    position: absolute;
-    top: 60px;
-    left: 645px;
-}
 .works i{
     color: #ffc107;
     padding: 5px 0
@@ -368,6 +416,25 @@
     background-color: #FFC107;
     color: #222 ;
     border-color: #FFC107;
+}
+
+/* extra Small devices */
+
+@media (max-width: 575px){
+    .works .lead{
+        line-height: 1;
+    }
+    .works .disk{
+        padding: 0 15px;
+        margin-bottom: 30px
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .works .lead{
+        line-height: 1;
+    }
 }
 /* End Works */
 
@@ -387,20 +454,30 @@
     width: 140px;
     margin: auto;
 }
-.available .span{
-    display: inline-block;
-    width: 60px;
-    height: 2px;
-    position: absolute;
-    top: 70px;
-    left: 526px;
-}
 .available .download{margin-top: 50px; margin-bottom: 5px}
 .available .download img{cursor: pointer; margin: 0 5px}
 .available .download img:hover{
     transform: translate(0px, -5px);
 }
 .available .disk-bottom{color: #888; font-size: 12px}
+/* extra Small devices */
+
+@media (max-width: 575px){
+    .available .lead{
+        line-height: 1;
+    }
+    .available .svg{
+        width: 95%
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .available .lead{
+        line-height: 1;
+    }
+}
+
 /* End available */
 
 /* Start Footer */
@@ -460,6 +537,32 @@
 .footer-under ul li{display: inline-block; margin: 0 5px}
 .footer-under ul li a, .footer-under ul li{color: #999; text-decoration: none}
 .footer-under ul li a:hover{color: #000}
+
+/* extra Small devices */
+
+@media (max-width: 575px){
+    .footer{
+        text-align: center
+    }
+    .footer .contact p i{
+        left: 140px;
+    }
+    .footer form input{
+        text-align: center;
+        margin-bottom: 5px
+    }
+    .footer .touch .btn{
+        width: 100%
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .form-inline .form-control{
+        width: 60%
+    }
+}
+
 /* End Footer */
 
 /* Start up Button */
