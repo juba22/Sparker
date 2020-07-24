@@ -70,11 +70,7 @@ $(function () {
     });
     
     /* Nice Scroll */
-    $("body").niceScroll({
-        scrollspeed: 100,
-        cursorborder: "0",
-        
-    });
+    $("body").niceScroll();
     
     /* loading */
     $(window).each(function () {
